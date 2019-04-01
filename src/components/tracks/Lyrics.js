@@ -13,7 +13,7 @@ class Lyrics extends Component {
 		const {id} = this.props.match.params;
 		axios
 			.get(
-				`${REACT_APP_BASE_URL}track.lyric.get?track_id=${id}&apikey=${REACT_APP_API_KEY}`
+				`${REACT_APP_BASE_URL}track.lyrics.get?track_id=${id}&apikey=${REACT_APP_API_KEY}`
 			)
 			.then(res => {
 				console.log(res.data);
@@ -23,6 +23,7 @@ class Lyrics extends Component {
 						`${REACT_APP_BASE_URL}track.get?track_id=${id}&apikey=${REACT_APP_API_KEY}`
 					)
 					.then(res => {
+						console.log(res.data);
 						this.setState({track: res.data.message.body.track});
 					})
 					.catch(err => console.log(err));
@@ -68,12 +69,12 @@ class Lyrics extends Component {
 							<strong>Explicit Words</strong>
 							{track.explicit === 0 ? 'No' : 'Yes'}
 						</li>
-						<li className="list-group-item">
-							<strong>Release Day</strong>:
+						{/* <li className="list-group-item">
+							<strong>Release Date</strong>:
 							{track.first_release_date
 								.replace(/-/g, '/')
 								.replace(/(T00:00:00Z)/g, '')}
-						</li>
+						</li> */}
 					</ul>
 				</Fragment>
 			);
