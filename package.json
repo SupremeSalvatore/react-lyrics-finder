@@ -29,5 +29,5 @@
 		"gh-pages": "^2.0.1",
 		"react-router-dom": "^4.4.0"
 	},
-	"homepage": "https://supremesalvatore.github.io/ReactLyricsApp"
+	"homepage": "https://supremesalvatore.github.io/react-lyrics-finder"
 }
