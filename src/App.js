@@ -1,6 +1,6 @@
 import React, {Component, Fragment} from 'react';
 import './App.css';
-import {HashRouter as Router, Route, Switch} from 'react-router-dom';
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import Navbar from './components/layout/Navbar';
 import Index from './components/layout/Index';
 import Lyrics from './components/tracks/Lyrics';
@@ -9,7 +9,7 @@ class App extends Component {
 	render() {
 		return (
 			<Provider>
-				<Router>
+				<Router basename={process.env.PUBLIC_URL}>
 					<Fragment>
 						<Navbar />
 						<div className="container">

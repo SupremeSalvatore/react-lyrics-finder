@@ -6,6 +6,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 #### `REACT_APP_BASE_URL='https://cors-anywhere.herokuapp.com/https://api.musixmatch.com/ws/1.1/'`
 
+#### `REACT_APP_PUBLIC_URL='https://supremesalvatore.github.io/your-repo-name'`
+
 ## Available Scripts
 
 In the project directory, you can run:
@@ -25,4 +27,8 @@ It correctly bundles React in production mode and optimizes the build for the be
 
 The build is minified and the filenames include the hashes.<br>
 Your app is ready to be deployed!
+
+### `yarn run deploy`
+
+Deploy page on gh-pages
 
