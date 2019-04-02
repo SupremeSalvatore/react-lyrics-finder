@@ -1,34 +1,36 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# React Lyrics Finder
 
-## Create .env file in root of the app
+This app is made for practice in react using [musixmatch](https://developer.musixmatch.com/) api with react router, Context API and bootstrap. This was from tutorial I found on Youtube channel Brad Traversy.  
+You can check app here [https://supremesalvatore.github.io/react-lyrics-finder/](https://supremesalvatore.github.io/react-lyrics-finder/)
 
-#### `REACT_APP_API_KEY='YOUR_API_KEY'`
 
-#### `REACT_APP_BASE_URL='https://cors-anywhere.herokuapp.com/https://api.musixmatch.com/ws/1.1/'`
+## Requirements
 
-#### `REACT_APP_PUBLIC_URL='https://supremesalvatore.github.io/your-repo-name'`
+In order to create start this app you will need to make ```.env``` file in root of the file with containing env variables:
+```
+REACT_APP_API_KEY='YOUR_API_KEY'
+REACT_APP_BASE_URL='https://cors-anywhere.herokuapp.com/https://www.food2fork.com/api/'
+REACT_APP_PUBLIC_URL='https://your-username.github.io/your-repo-name'
+```
 
 ## Available Scripts
 
-In the project directory, you can run:
+Install packages from package.json
+### ```yarn install```
 
-### `yarn start`
+In order to start application after you make ```.env```
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### ```yarn start```
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+Make build folder
 
-### `yarn run build`
+### ```yarn build```
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Deploy on Github pages with gh-pages package you already installed
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+### ```yarn deploy```
 
-### `yarn run deploy`
 
-Deploy page on gh-pages
-
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
